@@ -20,8 +20,13 @@ html {
 body {
 	max-width: 1920px;
 	height: 100svh;
+
 	font-family: var(--font-regular);
+	background-image: url('/images/background.png');
+
+	background-size: cover;
 	background-color: #333;
+	background-repeat: no-repeat;
 }
 
 body::-webkit-scrollbar {
@@ -78,5 +83,34 @@ header {
 
 	.burger {
 		display: none;
+	}
+}
+
+main {
+	#home {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100svh;
+
+		.main-background {
+			position: relative;
+			background-image: url('/images/main-background.png');
+			background-position-x: 12%;
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+
+			.hero-img {
+				background-image: url('/images/logo-hero.png');
+				background-position: center;
+				background-size: 45%;
+				background-repeat: no-repeat;
+				width: 100%;
+				height: 100%;
+				box-shadow: none;
+			}
+		}
 	}
 }
