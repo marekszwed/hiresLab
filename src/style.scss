@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--font-thin: 'Raleway-Thin', sans-serif;
+	--font-regular: 'Raleway-Regular', sans-serif;
+	--font-medium: 'Raleway-Medium', sans-serif;
+	--font-bold: 'Raleway-Bold', sans-serif;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	max-width: 1920px;
+	height: 100svh;
+	font-family: var(--font-regular);
+	background-color: #333;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+header {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+	left: 0;
+	right: 0;
+	font-size: 2.4rem;
+	background: transparent;
+	z-index: 1000;
+
+	.logo {
+		display: flex;
+		margin-left: 3em;
+
+		&__img {
+			width: 53px;
+			height: 53px;
+		}
+	}
+
+	nav,
+	.join {
+		display: flex;
+		margin: 0.5em;
+	}
+
+	nav {
+		position: relative;
+
+		.item {
+			margin: 0.5em 2em;
+			padding: 0.5em;
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+
+	.join {
+		margin-right: 3em;
+
+		&__text {
+			color: #b1ef3a;
+			text-decoration: none;
+		}
+	}
+
+	.burger {
+		display: none;
+	}
+}
