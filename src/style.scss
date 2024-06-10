@@ -28,7 +28,7 @@ body {
 	// height: 100svh;
 	font-size: 1.6rem;
 	font-family: var(--font-regular);
-	background-image: url('/images/background.png');
+	background-image: url('/images/background.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -152,7 +152,6 @@ main {
 			grid-column: 3/8;
 			grid-row: 4/8;
 			padding-inline: 2em;
-			
 
 			&__title {
 				color: $main-green;
@@ -163,11 +162,43 @@ main {
 			&__description {
 				color: $light-grey;
 				// padding-top: 1em;
-				padding-bottom: .5em;
+				padding-bottom: 0.5em;
 				line-height: 1.6em;
 			}
 		}
 
-		
+		.counter {
+			position: relative;
+			display: grid;
+			grid-column: 3/8;
+			grid-row: 9/11;
+
+			&__box {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				
+				&--item {
+					position: relative;
+					text-align: center;
+
+
+					.number {
+						font-size: 2.6rem;
+						font-weight: bold;
+						color: $pure-white;
+						
+						margin-bottom: 1em;
+					}
+
+					.counter-text {
+						padding-inline: 2.2em;
+						font-size: 2rem;
+						font-family: var(--font-thin);
+						color: $light-grey;
+					}
+				}
+			}
+		}
 	}
 }
