@@ -1,6 +1,11 @@
 const counterBox: HTMLElement = document.querySelector('.counter__box--item')!;
 const counterItems = document.querySelectorAll('.number');
 
+
+const options = {
+	rootMargin: '-100px'
+}
+
 const startCounter = (entry: any) => {
 	console.log(entry[0]);
 
@@ -27,7 +32,7 @@ const startCounter = (entry: any) => {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-	const observer = new IntersectionObserver(startCounter);
+	const observer = new IntersectionObserver(startCounter, options);
 
 	observer.observe(counterBox);
 });
