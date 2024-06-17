@@ -1,5 +1,6 @@
 const counterBox: HTMLElement = document.querySelector('.counter__box--item')!;
 const counterItems = document.querySelectorAll('.number');
+const hiddenitems = document.querySelectorAll('.hidden')
 
 
 const options = {
@@ -36,3 +37,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	observer.observe(counterBox);
 });
+
+
+
+
+const observer = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		if(entry.isIntersecting) {
+			entry.target.classList.add('show')
+		} else {
+			
+		}
+	})
+})
+
+hiddenitems.forEach((el) => observer.observe(el))
+
