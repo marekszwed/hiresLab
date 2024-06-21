@@ -113,7 +113,6 @@ main {
 			background-size: cover;
 			width: 100%;
 			height: 100%;
-			
 
 			.hero-img {
 				background-image: url('/images/logo-hero.png');
@@ -346,8 +345,6 @@ main {
 			transform: translateX(0);
 		}
 
-		
-
 		// .animate-letters {
 
 		// 	grid-column: 1/11;
@@ -379,6 +376,7 @@ main {
 		display: grid;
 		grid-template-columns: repeat(10, 1fr);
 		grid-template-rows: min-content(1fr);
+		margin-bottom: 8em;
 
 		.rent-shadow {
 			position: relative;
@@ -388,7 +386,7 @@ main {
 			justify-content: end;
 
 			.shadow {
-				padding-top: .3em;
+				padding-top: 0.3em;
 				font-size: 36rem;
 				line-height: 1em;
 				text-transform: uppercase;
@@ -406,7 +404,6 @@ main {
 			margin-top: 23em;
 			margin-left: 3.5em;
 			// padding-right: 5em;
-			
 
 			&__title {
 				font-size: 3rem;
@@ -454,7 +451,7 @@ main {
 							color: $pure-white;
 							margin-bottom: 2em;
 						}
-		
+
 						&--description {
 							padding-inline: 2em;
 							line-height: 1.7em;
@@ -462,7 +459,7 @@ main {
 							color: $light-grey;
 						}
 					}
-					
+
 					&__btn {
 						display: flex;
 						justify-content: center;
@@ -480,18 +477,36 @@ main {
 						cursor: pointer;
 					}
 				}
+			}
+		}
+	}
+
+	#contact {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(10, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+
+		.contact-shadow {
+			position: relative;
+			display: grid;
+			grid-column: 1/11;
+			grid-row: 1/5;
+
+			&__up,
+			&__down {
+				font-size: 36rem;
+				text-transform: uppercase;
+				font-weight: bold;
+				color: #a57cf721;
+			}
+
+			&__up {
+				justify-self: end;
 
 				
 			}
 		}
-		
-	}
-
-	#footer {
-		position: relative;
-		display: grid;
-		grid-template-columns: repeat(10, 1fr);
-		grid-template-rows: repeat(3, fr);
 	}
 }
 
