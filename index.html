@@ -17,42 +17,47 @@
 		></script>
 	</head>
 	<body>
-		<header>
-			<div class="logo">
+		<header class="header wrapper">
+			<div class="header-logo">
 				<a href="#home">
 					<img
 						src="/images/logo-green.png"
-						class="logo__img"
+						class="header-logo__img"
 						alt="hiresLab company logo"
 					/>
 				</a>
 			</div>
-			<nav>
-				<a href="#home" class="item">home</a>
-				<a href="#products" class="item">products</a>
-				<a href="#rent" class="item">rent</a>
-				<a href="#" class="item">contact</a>
+			<nav class="header-nav">
+				<ul class="header-nav-list">
+					<li><a href="#home" class="header-nav-list__item">home</a></li>
+					<li><a href="#products" class="header-nav-list__item">products</a></li>
+					<li><a href="#rent" class="header-nav-list__item">rent</a></li>
+					<li><a href="#contact" class="header-nav-list__item">contact</a></li>
+				</ul>
 			</nav>
-			<div class="join">
-				<a href="#" class="join__text">Join Us</a>
+			<div class="header-join">
+				<a href="#" class="header-join__text">Join Us</a>
 			</div>
-			<button class="burger">
-				<i class="fa-solid fa-bars open hide"></i>
-				<i class="fa-solid fa-x close"></i>
+			<button class="header-burger">
+				<i class="fa-solid fa-bars header-burger__open open hide"></i>
+				<i class="fa-solid fa-x header-burger__close close"></i>
 			</button>
 		</header>
 		<main>
-			<section id="home">
-				<div class="main-background">
-					<div class="hero-img"></div>
+			<section id="home" class="home">
+				<!-- <div class="home-main-background">
+					<div class="home-main-background__hero-image"></div>
+				</div> -->
+				<div class="home-main-background">
+					<h1 id="logo">
+						<img src="/images/logo-hero.png" class="hero-image" alt="white circle logo with name of hiresLab company">
+					</h1>					
 				</div>
 			</section>
-			<section id="about-us">
-				<div class="shadow">
-					<!-- <span class="shadow__up">about</span>
-					<span class="shadow__down">us</span> -->
-					<p class="shadow__up">about</p>
-					<p class="shadow__down">us</p>
+			<section id="about-us" class="about">
+				<div class="about__shadow">
+					<p class="about__shadow--up">about</p>
+					<p class="about__shadow--down">us</p>
 				</div>
 				<div class="about-text">
 					<h2 class="about-text__title">about us</h2>
@@ -78,42 +83,40 @@
 					</p>
 				</div>
 				<div class="counter">
-					<div class="counter__box">
-						<div class="counter__box--item">
+					<div class="counter-box">
+						<div class="counter-box__item countdown-item">
 							<div class="number" data-number="452">0</div>
 							<p class="counter-text">wypożyczone urządzenia</p>
 						</div>
-						<div class="counter__box--item">
+						<div class="counter-box__item countdown-item">
 							<div class="number" data-number="126">0</div>
 							<p class="counter-text">zadowoleni klienci</p>
 						</div>
-						<div class="counter__box--item">
+						<div class="counter-box__item countdown-item">
 							<div class="number" data-number="73">0</div>
 							<p class="counter-text">obsłużone imprezy</p>
 						</div>
-						<div class="counter__box--item">
+						<div class="counter-box__item countdown-item">
 							<div class="number" data-number="41">0</div>
 							<p class="counter-text">zaopatrzone sklepy</p>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section id="products">
-				<div class="product-shadow">
-					<p class="product-shadow__up">prod</p>
-					<p class="product-shadow__down">ucts</p>
+			<section id="products" class="product-section">
+				<div class="product-section__shadow">
+					<p class="product-section__shadow--up">prod</p>
+					<p class="product-section__shadow--down">ucts</p>
 				</div>
-
-				<div class="items">
-					<div class="item-1 hidden">
+				<div class="products-list">
+					<article class="headphones hidden">
 						<img
 							src="/images/headphones.png"
-							class="image"
+							class="headphones__image"
 							alt="picture of black headphones"
 						/>
-	
-						<div class="text">
-							<h2 class="item-name">Słuchawki nauszne HRS-200</h2>
+						<div class="headphones__text">
+							<h2 class="headphones__text-name">Słuchawki nauszne HRS-200</h2>
 							<ul>
 								<li>
 									<span class="main-topic">Doskonała jakość dźwięku - </span>
@@ -142,16 +145,16 @@
 								</li>
 							</ul>
 						</div>
-					</div>
-					<div class="item-2 hidden">
+					</article>
+					<article class="loudspeakers hidden">
 						<img
 							src="/images/loudspeaker.png"
-							class="image"
+							class="loudspeakers__image"
 							alt="picture of black concert loudspeaker"
 						/>
 	
-						<div class="text">
-							<h2 class="item-name">Kolumny estradowe seria LSP</h2>
+						<div class="loudspeakers__text">
+							<h2 class="loudspeakers__text-name">Kolumny estradowe seria LSP</h2>
 							<ul>
 								<li>
 									<span class="main-topic">Potężny dźwięk - </span> Zapewniają
@@ -180,16 +183,16 @@
 								</li>
 							</ul>
 						</div>
-					</div>
-					<div class="item-3 hidden">
+					</article>
+					<article class="amplifier hidden">
 						<img
 							src="/images/amplifier.png"
-							class="image"
+							class="amplifier__image"
 							alt="picture of guitar amplifier"
 						/>
 	
-						<div class="text">
-							<h2 class="item-name">Wzmacniacz gitarowy HRS - 5000</h2>
+						<div class="amplifier__text">
+							<h2 class="amplifier__text-name">Wzmacniacz gitarowy HRS - 5000</h2>
 							<ul>
 								<li>
 									<span class="main-topic">Klasyczny dźwięk lampowy - </span>
@@ -220,19 +223,19 @@
 								</li>
 							</ul>
 						</div>
-					</div>
+					</article>
 				</div>
 			</section>
 			<div class="animation-box">
-				<h3 class="tracking-in-contract-bck">hiresLab</h3>
+				<h3 class="animation-box__letters">hiresLab</h3>
 			</div>
-			<section id="rent">
-				<div class="rent-shadow">
-					<p class="shadow">rent</p>
+			<section id="rent" class="rent-section">
+				<div class="rent-section-letters">
+					<p class="rent-section-letters__shadow">rent</p>
 				</div>
-				<div class="rent-box">
-					<h2 class="rent-box__title">rent</h2>
-					<p class="rent-box__description">
+				<div class="rent-section-box">
+					<h2 class="rent-section-box__title">rent</h2>
+					<p class="rent-section-box__description">
 						Zapraszamy do skorzystania z naszej oferty wynajmu profesjonalnego
 						sprzętu audio! Oferujemy szeroki wybór najwyższej jakości urządzeń,
 						takich jak słuchawki audiofilskie, kolumny estradowe oraz
@@ -246,46 +249,46 @@
 				</div>
 				<div class="cards">
 					<div class="cards-box">
-						<div class="card">
-							<div class="card__text">
-								<p class="card__text--title">standard</p>
-								<p class="card__text--description">
+						<div class="cards-box__item">
+							<div class="cards-box__item-text">
+								<p class="cards-box__item-text-title">standard</p>
+								<p class="cards-box__item-text-description">
 									Podstawowy zestaw nagłośnienia na małe wydarzenia. Zawiera
 									słuchawki audiofilskie, kompaktowe kolumny estradowe i
 									wzmacniacz gitarowy. Idealny wybór dla początkujących i małych
 									imprez. Wypożycz sprzęt muzyczny już dziś!
 								</p>
 							</div>
-							<button class="card-btn">400 $</button>
+							<button class="cards-box__item-btn">400 $</button>
 						</div>
-						<div class="card">
-							<div class="card__text">
-								<p class="card__text--title">premium</p>
-								<p class="card__text--description">
+						<div class="cards-box__item">
+							<div class="cards-box__item-text">
+								<p class="cards-box__item-text-title">premium</p>
+								<p class="cards-box__item-text-description">
 									Rozszerzona oferta wypożyczania sprzętu audio. Zawiera
 									wysokiej jakości słuchawki, profesjonalne kolumny estradowe i
 									wzmacniacz gitarowy. Perfekcyjna jakość dźwięku na średnie i
 									duże wydarzenia. Sprawdź nasze pakiety audio!
 								</p>
 							</div>
-							<button class="card-btn">1000 $</button>
+							<button class="cards-box__item-btn">1000 $</button>
 						</div>
-						<div class="card">
-							<div class="card__text">
-								<p class="card__text--title">exclusive</p>
-								<p class="card__text--description">
+						<div class="cards-box__item">
+							<div class="cards-box__item-text">
+								<p class="cards-box__item-text-title">exclusive</p>
+								<p class="cards-box__item-text-description">
 									Topowy zestaw nagłośnienia dla wymagających. Oferuje sprzęt
 									audio klasy premium: najwyższej jakości słuchawki, kolumny
 									estradowe o dużej mocy i wszechstronny wzmacniacz gitarowy.
 									Idealny na koncerty i duże imprezy.
 								</p>
 							</div>
-							<button class="card-btn">2000 $</button>
+							<button class="cards-box__item-btn">2000 $</button>
 						</div>
-						<div class="card">
-							<div class="card__text">
-								<p class="card__text--title">vip</p>
-								<p class="card__text--description">
+						<div class="cards-box__item">
+							<div class="cards-box__item-text">
+								<p class="cards-box__item-text-title">vip</p>
+								<p class="cards-box__item-text-description">
 									Ekskluzywna oferta wypożyczenia sprzętu audio. Najwyższej
 									jakości słuchawki, zaawansowane kolumny estradowe i
 									specjalistyczny wzmacniacz gitarowy. Perfekcyjny wybór dla
@@ -293,57 +296,49 @@
 									muzyczny na najwyższym poziomie!
 								</p>
 							</div>
-							<button class="card-btn">Od 4000 $</button>
+							<button class="cards-box__item-btn">Od 4000 $</button>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section id="contact">
+			<section id="contact" class="contact">
 				<div class="contact-shadow">
 					<p class="contact-shadow__up">con</p>
 					<p class="contact-shadow__down">tact</p>
-				</div>
-				<div class="formBox">
-					<div class="formBox-box">
-						<form id="form">
-							<h2 class="formBox-title">napisz do nas</h2>
-							<div class="upper-section">
-								<div class="left">
-									<div class="form-box">
-										<label for="name">Imię*</label>
-										<input type="text" id="name"/>
-									</div>
-									<div class="form-box">
-										<label for="surname">Nazwisko</label>
-										<input type="text" id="surname"/>
-									</div>
-								</div>
-								<div class="right">
-									<div class="form-box">
-										<label for="mail">E-mail*</label>
-										<input type="text" id="mail"/>
-									</div>
-									<div class="form-box">
-										<label for="telephone">Numer telefonu*</label>
-										<input type="number" id="telephone"/>
-									</div>
-								</div>
+				</div>				
+				<form id="form" class="contact-form">
+					<div class="sheet">
+						<h2 class="sheet__title">napisz do nas</h2>
+						<fieldset class="sheet__upper">							
+							<div class="sheet__upper-name input-field">
+								<label for="name">Imię*</label>
+								<input type="text" id="name"/>
 							</div>
-							<div class="lower-section">
-								<div class="form-box message">
-									<label for="customer-message">Treść wiadomości</label>
-									<textarea name="customer-message" id="customer-message"></textarea>
-								</div>
+							<div class="sheet__upper-surname input-field">
+								<label for="surname">Nazwisko</label>
+								<input type="text" id="surname"/>
 							</div>
-							<div class="buttons">
-								<div class="buttons__area">
-									<button class="clear-btn">wyczyść</button>
-									<button class="send-btn">wyślij</button>
-								</div>
+							<div class="sheet__upper-email input-field">
+								<label for="mail">E-mail*</label>
+								<input type="text" id="mail"/>
 							</div>
-						</form>
+							<div class="sheet__upper-phone input-field">
+								<label for="telephone">Numer telefonu*</label>
+								<input type="number" id="telephone"/>
+							</div>							
+						</fieldset>
+						<fieldset class="sheet__down">
+							<div class="sheet__down-content">
+								<label for="customer-message">Treść wiadomości</label>
+								<textarea name="customer-message" id="customer-message"></textarea>
+							</div>
+						</fieldset>			
+						<div class="sheet__buttons">
+							<button class="sheet__buttons-clear">wyczyść</button>
+							<button class="sheet__buttons-send">wyślij</button>
+						</div>						
 					</div>
-				</div>
+				</form>				
 			</section>
 			<footer id="footer">
 				<p class="footer__text">@copy; <span class="footer__year"></span>project by Natalia Szwed & developed by Marek Szwed</p>

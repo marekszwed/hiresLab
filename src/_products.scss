@@ -1,0 +1,132 @@
+.product-section {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+
+	&__shadow {
+		display: grid;
+		justify-content: center;
+		grid-column: 1/11;
+		grid-row: 1/2;
+
+		&--up,
+		&--down {
+			font-size: 36rem;
+			line-height: 1em;
+			text-transform: uppercase;
+			font-weight: bold;
+			color: #cccccc18;
+			overflow: hidden;
+		}
+
+		&--up {
+			margin-left: 2.8em;
+		}
+		&--down {
+			margin-left: 2.1em;
+		}
+	}
+
+	.products-list {
+		position: relative;
+		display: grid;
+		grid-column: 1/11;
+		grid-row: 1/5;
+
+		.headphones,
+		.loudspeakers,
+		.amplifier {
+			position: relative;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			// margin-bottom: 3em;
+			z-index: 1;
+
+			&__text {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				padding-right: 10em;
+				padding-top: 6em;
+
+				color: $pure-white;
+
+				ul {
+					li {
+						font-family: var(--font-thin);
+						line-height: 2em;
+						list-style: none;
+						color: $light-grey;
+						// padding-right: 12em;
+
+						.main-topic {
+							font-weight: bold;
+						}
+					}
+				}
+			}
+
+			&__image {
+				background-position: center;
+				width: 50%;
+			}
+			&__text-name {
+				font-size: 3.5rem;
+				font-weight: normal;
+				color: $main-green;
+				margin: 0 0.2em 1em 0;
+			}
+		}
+
+		.headphones {
+			padding-top: 19em;
+		}
+
+		.loudspeakers {
+			flex-direction: row-reverse;
+			&__text {
+				margin-left: 15em;
+				padding-right: 0;
+			}
+		}
+
+		.amplifier {
+			margin-top: 5.5em;
+		}
+
+		.headphones,
+		.amplifier {
+			&__text {
+				margin-right: 4em;
+				padding-top: 0;
+			}
+		}
+
+		.hidden {
+			opacity: 0;
+			transition: all 1.5s;
+			transform: translateX(-100%);
+		}
+
+		.show {
+			opacity: 1;
+			transition: all 1.5s;
+			transform: translateX(0);
+		}
+	}
+
+	// .letters {
+	// 	position: relative;
+	// 	grid-column: 1/11;
+	// 	grid-row: 5/6;
+	// 	padding-top: 3em;
+	// 	font-size: 7rem;
+	// 	font-style: italic;
+	// 	text-transform: uppercase;
+	// 	color: $main-green;
+	// 	// animation: movingAnimation 10s linear infinite;
+	// 	margin-bottom: 5em;
+	// 	overflow: hidden;
+	// }
+}
