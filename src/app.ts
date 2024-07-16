@@ -1,5 +1,5 @@
-const counterBox: HTMLElement = document.querySelector('.countdown-item')!;
-const counterItems = document.querySelectorAll('.number');
+const counterBox: HTMLElement = document.querySelector('.js-countdown-item')!;
+const counterItems = document.querySelectorAll('.js-counter-number');
 const hiddenitems = document.querySelectorAll('.hidden')
 
 

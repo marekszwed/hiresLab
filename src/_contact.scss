@@ -53,25 +53,7 @@
 
 			.input-field {
 				display: flex;
-
 				flex-direction: column;
-
-				label {
-					margin-top: 1em;
-					font-size: 1.6rem;
-					color: $pure-white;
-				}
-
-				input {
-					margin-top: 2em;
-					margin-bottom: 2em;
-					padding: 0.5em 8em 0.5em 0;
-					font-size: 2rem;
-					color: $pure-white;
-					background-color: transparent;
-					border: transparent;
-					border-bottom: 1px solid #719c20;
-				}
 			}
 
 			&__upper-surname,
@@ -87,51 +69,20 @@
 			&__down-content {
 				display: flex;
 				flex-direction: column;
-
-				label {
-					font-size: 1.6rem;
-					color: $pure-white;
-				}
-
-				textarea {
-					resize: vertical;
-					margin-top: 2em;
-					margin-right: 5em;
-					min-height: 2em;
-					max-height: 20em;
-					font-size: 2rem;
-					color: $pure-white;
-					background-color: transparent;
-					border: transparent;
-					border-bottom: 1px solid #719c20;
-				}
 			}
 
 			&__buttons {
 				display: flex;
 				justify-content: space-evenly;
 				margin: 2em 6em 0 0;
-
-				button {
-					width: 150px;
-					height: 30px;
-					font-size: 1.6rem;
-					text-transform: uppercase;
-					font-weight: bold;
-					cursor: pointer;
-				}
 			}
 
-			&__buttons-clear {
-				border-radius: 50px;
-				border: none;
+			.clear {
 				background-color: #313131;
 				color: $pure-white;
 			}
 
-			&__buttons-send {
-				border-radius: 50px;
-				border: none;
+			.send {
 				background-color: $main-green;
 				color: #313131;
 			}

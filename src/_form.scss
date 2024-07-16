@@ -1,0 +1,30 @@
+label {
+  margin-top: 1em;
+  font-size: 1.6rem;
+  color: $pure-white;
+}
+
+input {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 0.5em 8em 0.5em 0;
+  font-size: 2rem;
+  color: $pure-white;
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 1px solid #719c20;
+}
+
+textarea {
+  resize: vertical;
+  margin-top: 2em;
+  margin-right: 5em;
+  min-height: 2em;
+  max-height: 20em;
+  font-size: 2rem;
+  color: $pure-white;
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 1px solid #719c20;
+}
+
